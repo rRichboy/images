@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="images.Window1"
+        Title="Donate">
+	<StackPanel>
+		<TabControl Margin="5">
+			<TabItem Header="Войти">
+				<Border BorderThickness="5" BorderBrush="White" Width="350" Height="300" Margin="0 20 0 0">
+					<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+						<TextBlock TextAlignment="Center" Text="Авторизация" FontWeight="Bold"/>
+						<TextBox Margin="0 5" Watermark="Логин" Name="UsernameTextBox" Width="200"/>
+						<TextBox Margin="0 5" Watermark="Пароль" Name="PasswordTextBox" Width="200" PasswordChar="*"/>
+						<CheckBox>Чужой компьтер</CheckBox>
+						<Button HorizontalContentAlignment="Center"  Margin="0 0 0 0" Name="LoginButton" Content="Войти" Background="blue" Foreground="White" Width="80"/>
+						<Button Click="Click" Name="RegistrationButton" Margin="0 -30 0 0" Content="Регистрация" Background="green" Foreground="White" HorizontalAlignment="Right"/>
+					</StackPanel>
+				</Border>
+			</TabItem>
+			<TabItem x:Name="RegistrationTabControl" Header="Регистрация">
+				<Border BorderThickness="5" BorderBrush="White" Width="375" Height="275" Margin="0 20 0 0">
+					<StackPanel>
+						<TextBlock TextAlignment="Center" Text="Регистрация" FontWeight="Bold"/>
+						<TextBlock TextAlignment="Center" Text="Моментальная регистрация"/>
+						<TextBox Margin="0 5" Watermark="Ваш логин" Name="Login" Width="296"/>
+						<TextBox Margin="0 5" Watermark="Ваш пароль" Name="Pass" Width="296" PasswordChar="*"/>
+						<Button Margin="335 -40 30 0" Content="*" Click="ShowPassword_Click" Width="25" Height="25"/>
+						<StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+							<DatePicker DayFormat="ddd dd"/>
+						</StackPanel>
+						<Button HorizontalContentAlignment="Center" Margin="0 5" Name="RegsButton" Content="Зарегистрироваться" Background="green" Foreground="White"
+									HorizontalAlignment="Center" Width="296"/>
+						<Button HorizontalContentAlignment="Center" Margin="0 5" Name="Gos" Content="Продолжить с Госуслуги" Background="blue" Foreground="White"
+									HorizontalAlignment="Center" Width="296"/>
+					</StackPanel>
+				</Border>
+			</TabItem>
+			<TabItem Header="В разработке">
+				<TextBlock Margin="5">Тут будут смешные мявчики</TextBlock>
+			</TabItem>
+			<TabItem Header="Выйти">
+				<StackPanel Margin="0 100">
+						<Button Foreground="Purple" CornerRadius="10" Background="White" HorizontalAlignment="Center" 
+					Click="Exit1">Нажмите для выхода</Button>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+	</StackPanel>
+</Window>
