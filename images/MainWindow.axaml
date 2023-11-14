@@ -3,20 +3,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        RequestedThemeVariant="Dark"
         x:Class="images.MainWindow"
         Title="images">
 	<StackPanel>
 		<StackPanel>
-			<Button Foreground="Green" CornerRadius="10" Background="Black"
-					Click="ShowPic">Показать мявчика</Button>
-			<Button Foreground="Red" CornerRadius="10" Background="Black" Margin="150 -30 0 0"
-					Click="HidePic">Убрать мявчика</Button>
-			<Button Foreground="Yellow" CornerRadius="10" Background="Black" Margin="285 -30 0 0"
-					Click="Exit">Перстать смотреть мявчиков</Button>
-			<Button Foreground="Pink" CornerRadius="10" Background="Black" Margin="510 -30 0 0"
-					Click="Regs">Sign In or Sign Up to see more meowchics</Button>
+			<Button Foreground="Green" CornerRadius="10" Background="Black" Click="ShowPic">Показать мявчика</Button>
+			<Button Foreground="Red" CornerRadius="10" Background="Black" Margin="150 -30 0 0" Click="HidePic">Убрать мявчика</Button>
+			<Button Foreground="Yellow" CornerRadius="10" Background="Black" Margin="285 -30 0 0" Click="Exit">Перестать смотреть мявчиков</Button>
+			<Button Foreground="Pink" CornerRadius="10" Background="Black" Margin="510 -30 0 0" Click="Regs">Sign In or Sign Up to see more meowchics</Button>
 		</StackPanel>
-		<Image Name="myPic" Width="250" Height="250" IsVisible="False"/>
+
+		<Image Name="myPic1" Width="250" Height="250" IsVisible="False" Source="avares://images/Assets/cat1.jpg"/>
+
+		<Image Name="myPic2" Width="250" Height="250" IsVisible="False" Source="avares://images/Assets/cat2.jpg"/>
+
+		<Image Name="myPic3" Width="250" Height="250" IsVisible="False" Source="avares://images/Assets/cat3.jpg"/>
+
 		<TextBlock x:Name="imageText" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" IsVisible="False"/>
 	</StackPanel>
 </Window>
